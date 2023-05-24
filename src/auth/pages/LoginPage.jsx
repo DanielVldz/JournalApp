@@ -19,7 +19,8 @@ export const LoginPage = () => {
   const isAithenticating = useMemo( () => status === 'checking', [status] );
   const onSubmit = ( event ) => {
     event.preventDefault();
-    console.log({ email, password });
+    // console.log({ email, password });
+    //! No es esta la accion a despachar
     dispatch(checkingCredentials());
   }
 

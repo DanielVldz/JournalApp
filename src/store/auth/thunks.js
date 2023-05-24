@@ -29,3 +29,7 @@ export const startCreatingUserWithEmailPassword = ({ email, password, displayNam
 
     }
 }
+
+export const startLoginWithEmailPassword = () => {
+    
+}
