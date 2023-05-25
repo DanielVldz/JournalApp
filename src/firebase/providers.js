@@ -50,7 +50,6 @@ export const registerUserWithEmailPassword = async({ email, password, displayNam
 }
 
 export const loginWithEmailPassword = async({ email, password }) => {
-    //! signInWithEmailAndPassword
     try{
         const result = await signInWithEmailAndPassword( FirebaseAuth, email, password );
         console.log(result);
