@@ -69,6 +69,7 @@ export const loginWithEmailPassword = async({ email, password }) => {
             errorMessage,
         }
     }
-    
-    // no se ocupa update al profile
+}
+export const logoutFirebase = async() => {
+    return await FirebaseAuth.signOut();
 }
