@@ -13,6 +13,7 @@ export const startNewNote = () => {
         const NewNote = {
             title: '',
             body: '',
+            imageUrls: [],
             date: new Date().getTime(),
         }
 
@@ -82,6 +83,8 @@ export const startDeletingNote = () => {
 
         const docRef =  doc( FirebaseDB, `${ uid }/journal/notes/${ note.id }`);
         await deleteDoc( docRef );
+
+        // console.log(note.id);
         
         dispatch( deleteNoteById( note.id ) );
     }
